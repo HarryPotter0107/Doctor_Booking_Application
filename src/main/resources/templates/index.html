@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Doctor - Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav a {
+            color: #fff !important;
+            font-size: 1.1em;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+            flex: 1; /* This makes the container take up the remaining space */
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto; /* Ensures footer stays at the bottom */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Doctor Booking System</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/dashboard">Admin Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/patient/dashboard">Patient Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+    <h1>Welcome to the Doctor Booking System</h1>
+    <p>Manage and book appointments with ease. Whether you are a patient looking to book an appointment or an admin managing the system, we are here to help!</p>
+
+    <a href="/admin/dashboard" class="btn btn-custom">Admin Login</a>
+    <a href="/patient/dashboard" class="btn btn-custom">Patient Login</a>
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2024 Doctor Booking System. All rights reserved.
+</footer>
+
+<!-- Bootstrap JS and jQuery (optional, if needed) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
